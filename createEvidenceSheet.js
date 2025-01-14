@@ -23,37 +23,37 @@ function createEvidenceSheet() {
     let expectedResults = sheet.getRange(`H${i + TEST_NO_SHEET_ROW_GAP}`).getValue(); // 期待結果
 
     if (!cat1) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         cat1 = sheet.getRange(`C${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (cat1) break;
       }
     }
     if (!cat2) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         cat2 = sheet.getRange(`D${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (cat2) break;
       }
     }
     if (!cat3) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         cat3 = sheet.getRange(`E${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (cat3) break;
       }
     }
     if (!prerequisites) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         prerequisites = sheet.getRange(`F${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (prerequisites) break;
       }
     }
     if (!operatigIns) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         operatigIns = sheet.getRange(`G${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (operatigIns) break;
       }
     }
     if (!expectedResults) {
-      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP + 1 !== i + TEST_NO_SHEET_ROW_GAP; i--) {
+      for (let j = i - 1; TEST_NO_SHEET_ROW_GAP !== j + TEST_NO_SHEET_ROW_GAP; j--) {
         expectedResults = sheet.getRange(`H${j + TEST_NO_SHEET_ROW_GAP}`).getValue();
         if (expectedResults) break;
       }
