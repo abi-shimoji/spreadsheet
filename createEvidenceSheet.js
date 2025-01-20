@@ -72,6 +72,7 @@ function createEvidenceSheet() {
     // ハイパーリンク挿入処理
     const linkCell = sheet.getRange(i + TEST_NO_SHEET_ROW_GAP, 9);
     linkCell.setFormula(`=HYPERLINK("${newSheetUrl}", "エビデンス${i}")`);
+    linkCell.setFontColor('#548dd4');
   }
 
   // テスト項目書シートに移動
